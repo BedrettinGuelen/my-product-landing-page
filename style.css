@@ -1,0 +1,255 @@
+body{
+  background: hsl(0, 0%, 100%);
+  padding: 0;  
+  margin: 0;
+  box-sizing: border-size;
+  font-family: monospace, cursive;
+  
+}
+#header{
+  overflow: hidden;
+  background-color: hsl(0, 0%, 90%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  height: 3rem;
+  width: 100%;
+  padding: 2em;
+  position: fixed;
+  vertical-align: middle;
+  margin: 0px;
+  z-index:1;
+  
+}
+#header-img{
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin: 0;
+  height: auto;
+}
+#header-img i{
+  height: auto;
+  width: auto;
+  margin: auto;
+  color: #000;
+  font-size: 4em;  
+}
+#logo-text{
+  margin: auto;
+  font-family: 'Bokor', cursive;
+  font-weight: 100;
+}
+#nav-bar{
+  margin : auto;
+  margin-right: 5em;
+  width: 40%;
+}
+
+.nav-link {
+  font-size: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  letter-spacing: 2px;
+  text-transform: none;
+  list-style-type: none;
+}
+@media screen and (max-width: 768px ) {
+    body{
+        overflow-x: hidden;/*x ekseninde scroll'u durdurmak icin yaptik*/
+    }
+    .nav-link{
+        display: block;
+  }
+  .nav-link li{
+    padding: 0.5em;
+  }
+  #nav-bar{
+    margin: 0;
+    
+  }
+}
+.nav-link:hover{
+  cursor: pointer;
+}
+#li1, #li2, #li3{
+  color: #000;
+  text-decoration: none;
+  list-style-type: none;
+}
+#li1:hover,
+#li2:hover,
+#li3:hover{
+  text-decoration: underline solid #065600 2px;
+  text-shadow: 0 0 1px #008200;
+}
+  
+.container{
+  width: auto;
+  margin: 4em;
+  margin-top: 8em;
+  margin-bottom: 0;
+  text-align: center;
+}
+#form{
+  margin: 2em 25% 2em 25%;
+  padding: 1em;
+  text-align: center;
+  background-color: rgba(255,10,10,0.1) ;
+  border-radius: 45%;
+  box-shadow: 5px 5px 15px 0px rgba(10,255,10,0.3), -5px -5px 15px 0px rgba(10,10,255,0.3);
+  
+}
+#form input{
+  margin:1em 0px;
+}
+#form #submit{
+  background-color: rgb(255,0,0);
+  border-radius: 3px;
+  height: 2.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#form #submit:hover{
+  cursor:pointer;
+}
+@media only screen and (max-width: 768px){
+  #form{
+    margin: 2em auto;
+    padding: 1em;
+    background-color:hsl(0, 0%, 100%);
+    text-align: center;
+    border-radius: none;
+    box-shadow: none;
+  }
+  #form input{
+    margin:1em auto;
+    width: auto;
+}
+}
+#video{
+  margin:2em;
+  height: 300px;
+  width: 400px;
+}
+@media only screen and (max-width: 768px){
+  #video{
+    height:150px;
+    width: 200px;
+  }
+}
+
+.features{
+  margin: 2em 5%;
+  text-align: left;
+  padding: 0;
+}
+.features div{
+  margin: 2em 0; 
+}
+.features h3, p1{
+  padding-top: 0;
+  vertical-align: 0;
+  padding-left: 0;
+}
+.features .icon{
+  height: auto;
+  margin: auto 2em;
+  color: #fc6f81;
+}
+.icon i{
+  font-size: xxx-large;
+}
+.features #recycle, #partnership, #biotech{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  margin: 0;
+}
+#flex-boxes{
+  display: flex;
+  justify-items: space-around;
+  width: auto;
+  margin: auto 15%;
+  text-align: center;
+}
+
+  
+#flex-boxes div{
+  margin: auto 2em;
+  min-height: 4em;
+  min-width: 4em;
+  background: rgba(203, 191, 206,0.3);
+}
+#flex-boxes h3{
+  margin-top:0;
+  padding: 1em;
+  min-height: 1.5em;
+  background-color: rgba(154, 134, 132, 0.3);
+}
+#flex-boxes p{
+  min-height: 3em;
+}
+#flex-boxes input{
+  margin-bottom: 2em;
+  padding: 3em auto;
+  height: 10vh;
+  width: 8vw;
+  text-align: center;
+  background-color: rgb(140, 172, 192,0.5);
+  font-family: monospace;
+  border: none;
+}
+@media only screen and (max-width: 768px){
+  #flex-boxes{
+  flex-direction: column;
+  }
+  #flex-boxes div{
+    margin: 1em auto;
+  }
+  #flex-boxes input{
+    width: 12vw;
+  }
+}
+#flex-boxes input:hover{
+  cursor: pointer;
+}
+#flex-boxes i{
+  vertical-align: -4px;
+  font-weight: bold;
+}
+#flex-boxes p::first-line{
+  font-size: x-large;
+  font-weight: bold;
+}
+#footer{
+  background-color: hsl(0, 0%, 90%);
+  margin:2em 25% 0 25%;
+  display: flex;
+  flex-direction: column;
+}
+#footer-up{
+  display:flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-up a{
+  padding:0 1em 0 1em;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+}
+#footer-up a:hover{
+  cursor: pointer;
+}
+#footer-down{
+  margin-top: -1em;
+  padding: 0;
+}
+
